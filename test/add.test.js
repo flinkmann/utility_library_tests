@@ -17,4 +17,7 @@ it("test addition 3", () =>{
 it("test addition 4", () =>{
     expect(add(-1,-1)).to.equal(-2)
 });
+it("test addition 5", () =>{
+    expect(add(-1,-1)).to.equal(-1)
+});
 })
