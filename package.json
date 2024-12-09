@@ -8,14 +8,26 @@
   },
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "c8 --all npm test"
+  },
+  "c8": {
+    "src": [
+      "src"
+    ],
+    "exclude": [
+      "src/.internal",
+      "test"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^5.0.1",
+    "c8": "^10.1.2",
     "chai": "^5.1.2",
+    "coveralls": "^3.1.1",
     "mocha": "^11.0.1",
     "mochawesome": "^7.1.3"
   }
