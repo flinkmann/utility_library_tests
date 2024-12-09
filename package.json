@@ -12,13 +12,9 @@
     "coverage": "c8 --all npm test"
   },
   "c8": {
-    "src": [
-      "src"
-    ],
-    "exclude": [
-      "src/.internal",
-      "test"
-    ]
+    "src": ["src"],
+    "exclude": ["src/.internal", "test"],
+    "reporter": ["text", "lcov"]
   },
   "keywords": [],
   "author": "",
